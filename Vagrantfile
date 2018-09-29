@@ -66,8 +66,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y apt-utils git vim dirmngr gnupg gnupg-agent software-properties-common python3 autoconf gperf bison flex gcc g++ make swig python-dev cmake subversion iverilog python3-pip python-pip
-    su vagrant
-    git clone --recurse-submodules https://github.com/ColePBryan/FPU.git code 
-    chown -R vagrant:vagrant FPU
+    #su vagrant
+    #git clone --recurse-submodules https://github.com/ColePBryan/FPU.git code 
+    #chown -R vagrant:vagrant code
     SHELL
 end
