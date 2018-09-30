@@ -63,11 +63,5 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  config.vm.provision "shell", inline: <<-SHELL
-    apt-get update
-    apt-get install -y apt-utils git vim dirmngr gnupg gnupg-agent software-properties-common python3 autoconf gperf bison flex gcc g++ make colormake swig python-dev cmake subversion iverilog python3-pip python-pip
-    sed -i '/force_color_prompt=yes/s/^#//g' /home/vagrant/.bashrc
-    ln -s /vagrant/code/ /home/vagrant
-    echo "alias make=colormake" >> /home/vagrant/.bashrc
-    SHELL
+  config.vm.provision "shell", path: "init.sh"
 end
