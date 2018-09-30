@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder "code", "/home/vagrant/code"
+  # config.vm.synced_folder "code", "/home/vagrant/code"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -66,7 +66,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y apt-utils git vim dirmngr gnupg gnupg-agent software-properties-common python3 autoconf gperf bison flex gcc g++ make colormake swig python-dev cmake subversion iverilog python3-pip python-pip
-    echo "force_color_prompt=yes" >> /home/vagrant/.bashrc
-    alias make=colormake
+    sed -i '/force_color_prompt=yes/s/^#//g' /home/vagrant/.bashrc
+    ln -s /vagrant/code/ /home/vagrant
+    echo "alias make=colormake" >> /home/vagrant/.bashrc
     SHELL
 end
