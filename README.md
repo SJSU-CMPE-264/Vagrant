@@ -28,3 +28,5 @@ This will take a few minutes as it downloads the virtual machine and all of the 
 * `exit`: exit the ssh session after connecting to the environment
 * `vagrant halt`: turn off the environment
 
+# Using the Environment #
+The `code` folder that is in the repo you just clone, has the folder structure we will be using in this course. You can edit these files either in the terminal of the quest machine(vagrant) or on the host machine using any tool you would normally use (Sublime, VScode, etc.). The changes you make will sync to both the host and quest.
