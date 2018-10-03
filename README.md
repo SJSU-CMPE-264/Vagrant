@@ -13,7 +13,7 @@ The following programs **need** to be installed before anything will actually wo
 In order to get all of the files, you will need to run the following in your terminal. If you are running windows, make sure to open `git bash`.
 
 ```bash
-git clone --recurse-submodules https://github.com/AlexNorell/CMPE-264-Vagrant.git 264_env
+git clone --recurse-submodules https://github.com/SJSU-CMPE-264/Vagrant.git 264_env
 ```
 
 # Setting up the environment #
