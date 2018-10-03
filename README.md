@@ -2,7 +2,7 @@
 This repo contains the entire testing and devlepment environment used in San Jose State's CMPE 264 Advanced Digital & Computing System Design. This has [cocotb](http://potential.ventures/cocotb/) fully setup and ready to go. 
 
 # Requirements #
-The following programs need to be installed before anything will actually work.
+The following programs *need* to be installed before anything will actually work.
 
 * [Git](https://git-scm.com/)
 * [Vagrant](https://www.vagrantup.com/)
