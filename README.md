@@ -2,6 +2,7 @@
 This repo contains the entire testing and devlepment environment used in San Jose State's CMPE 264 Advanced Digital & Computing System Design. 
 
 # Requirements #
+The following programs need to be installed before anything will actually work.
 
 * [Git](https://git-scm.com/)
 * [Vagrant](https://www.vagrantup.com/)
