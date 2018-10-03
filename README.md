@@ -6,6 +6,7 @@ This repo contains the entire testing and devlepment environment used in San Jos
 * [Git](https://git-scm.com/)
 * [Vagrant](https://www.vagrantup.com/)
 * [Virtualbox](https://www.virtualbox.org/)
+* [gtkWave](https://sourceforge.net/projects/gtkwave/files/)
 
 # Getting the files #
 In order to get all of the files, you will need to run the following in your terminal. If you are running windows, make sure to open `git bash`.
