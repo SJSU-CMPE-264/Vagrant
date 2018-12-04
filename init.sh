@@ -1,6 +1,5 @@
 echo "Setting up linked folder, turning on colored prompt, setting cocotb location"
 sed -i '/force_color_prompt=yes/s/^#//g' /home/vagrant/.bashrc
-ln -s /vagrant/code/ /home/vagrant
 ln -s /vagrant/verification /home/vagrant
 echo "export COCOTB=~/cocotb" >> /home/vagrant/.bashrc
 
