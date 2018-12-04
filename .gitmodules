@@ -2,6 +2,3 @@
 	path = verification
 	url = https://github.com/SJSU-CMPE-264/Verification.git
 
-[submodule "group-awesome"]
-	path = group-awesome
-	url = https://github.com/SJSU-CMPE-264/group-awesome.git
