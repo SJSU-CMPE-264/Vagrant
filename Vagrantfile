@@ -4,7 +4,6 @@ $setup = <<-SCRIPT
 echo "Installing stuff"
 apt-get update
 apt-get install -y apt-utils git vim dirmngr gnupg gnupg-agent software-properties-common python3 autoconf gperf bison flex gcc g++ make colormake swig python-dev cmake subversion iverilog python3-pip python-pip --fix-missing
-# apt-get install -y lubuntu-desktop gtkwave # Uncomment this line for a GUI 
 
 echo "Switching to vagrant user"
 su vagrant
@@ -23,7 +22,7 @@ SCRIPT
 
 $gui = <<-SCRIPT
 apt-get update -y 
-apt-get install -y lubuntu-desktop gtkwave
+apt-get install -y ubuntu-desktop gtkwave
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list
 apt-get update -y
