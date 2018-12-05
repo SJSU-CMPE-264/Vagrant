@@ -1,4 +1,5 @@
 [submodule "verification"]
 	path = verification
 	url = https://github.com/SJSU-CMPE-264/Verification.git
+	branch = master
 
