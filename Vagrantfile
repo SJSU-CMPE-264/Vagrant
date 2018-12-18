@@ -17,6 +17,7 @@ cd /home/vagrant
 git clone https://github.com/potentialventures/cocotb.git
 cd /home/vagrant/cocotb/examples/dff/tests
 make 1> /dev/null
+chown -R vagrant:vagrant /home/vagrant/cocotb
 exit
 SCRIPT
 
